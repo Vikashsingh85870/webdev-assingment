@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            background: #d3c6c6;
+            height: 100%;
+            width: 100vw;
+            align-items: center;
+            display: flex;
+
+            justify-content: center;
+
+        }
+
+        .form {
+            margin-top: 50px;
+            background: #4fd1d5;
+            display: flex;
+            flex-direction: column;
+         
+        }
+        label{
+            margin: 20px;
+            background-color: rgb(224, 211, 236);
+            padding: 7px;
+            border-radius: 15px;
+           border: 1px solid black;
+        }
+        .name ,.last,.email,.password,.cpassword,.age{
+            padding: 10px;
+            border-radius: 10px;
+            float: right;
+            margin-right: 20px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <form action="" class="form">
+            <label for="firstname">
+                FIRST NAME:
+                <input type="text" class="name" placeholder="ENTER THE NAME">
+            </label>
+            <label for="lastname">
+                LAST NAME :
+                <input type="text" class="last" placeholder="ENTER THE LAST  NAME">
+            </label>
+            <label for="email">
+                EMAIL :
+                <input type="text" class="email" placeholder="VIkashsingh77162@gmail.com">
+            </label>
+            <label for="Password">
+                PASSWORD :
+                <input type="text" class="password" placeholder="ENTER PASSWORD ">
+            </label>
+            <label for=" confPassword">
+                CONFORM PASSWORD :
+                <input type="text" class="cpassword" placeholder="CONFORM PASSWORD ">
+            </label>
+            <label for=" age">
+                AGE :
+                <input type="number" class="age" placeholder="age ">
+            </label>
+            <label for="">Gender:
+                <input type="radio" id="male" value="male"  class="gender" name="gender" checked />
+                <label for="male">Male</label>
+                <input type="radio" id="female" value="female" class="gender" name="gender" />
+                <label for="female">Female</label>
+                <input type="radio" id="other" value="other" class="gender" name="gender" />
+                <label for="other">Other</label>
+            </label>
+            <label for="terms">terms:
+                <input type="checkbox" id="terms" required class="checkbox" /> I agree to terms and
+                conditions
+            </label>
+            <br>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+
+</html>
